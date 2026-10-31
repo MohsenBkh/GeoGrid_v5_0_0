@@ -3,6 +3,8 @@
 
 # Shapefile I/O
 pyshp>=2.3.1
+networkx>=3.1
+python-docx>=1.1
 
 # Excel DGS output + equipment-type-library Excel import/export
 openpyxl>=3.1.2

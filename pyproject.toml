@@ -12,6 +12,8 @@ license = { text = "Proprietary" }
 dependencies = [
     "pyshp>=2.3.1",
     "openpyxl>=3.1.2",
+    "networkx>=3.1",
+    "python-docx>=1.1",
 ]
 
 [project.optional-dependencies]
@@ -22,12 +24,13 @@ gps = ["pyproj>=3.5.0"]
 [project.scripts]
 shp2dgs = "shp2dgs.cli:main"
 geogrid = "shp2dgs.cli:main"
+switchloc = "switchloc.__main__:main"
 
 [tool.setuptools.dynamic]
 version = { attr = "shp2dgs.__version__" }
 
 [tool.setuptools.packages.find]
-include = ["shp2dgs*"]
+include = ["shp2dgs*", "switchloc*"]
 
 [tool.setuptools.package-data]
 shp2dgs = []
